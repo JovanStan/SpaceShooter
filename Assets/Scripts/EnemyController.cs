@@ -31,7 +31,7 @@ public class EnemyController : MonoBehaviour
 
 	private void Movement()
 	{
-		randomSpeed = Random.Range(2, 5);
+		randomSpeed = Random.Range(2, 6);
 		if (transform.position.x == -10f)
 		{
 			rb.velocity = Vector3.right * randomSpeed;

@@ -52,7 +52,7 @@ public class SpawnManager : MonoBehaviour
 		{
 			Vector2 spawnPosition = new Vector2(Random.Range(-9f, 9f), 6f);
 			Instantiate(speedBoostPrefab, spawnPosition, Quaternion.identity);
-			yield return new WaitForSeconds(Random.Range(5f, 10f));
+			yield return new WaitForSeconds(Random.Range(7f, 12f));
 		}
 	}
 
@@ -63,7 +63,7 @@ public class SpawnManager : MonoBehaviour
 		{
 			Vector2 spawnPosition = new Vector2(Random.Range(-9f, 9f), 6f);
 			Instantiate(trippleShotPrefab, spawnPosition, Quaternion.identity);
-			yield return new WaitForSeconds(Random.Range(7f, 12f));
+			yield return new WaitForSeconds(Random.Range(10f, 15f));
 		}
 	}
 
@@ -74,7 +74,7 @@ public class SpawnManager : MonoBehaviour
 		{
 			Vector2 spawnPosition = new Vector2(Random.Range(-9f, 9f), 6f);
 			Instantiate(hearthPickup, spawnPosition, Quaternion.identity);
-			yield return new WaitForSeconds(Random.Range(15f, 20f));
+			yield return new WaitForSeconds(Random.Range(20f, 30f));
 		}
 	}
 }
